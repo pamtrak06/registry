@@ -5,11 +5,11 @@ docker compose for registry server &amp; web frontend
 See https://docs.docker.com/registry/
 
 # installation
-Create a specific node for the registry
+Optional (isolate on node): create a specific node for the registry
 ```bash
 docker-machine create --driver virtualbox node-registry
 ```
-Switch to this docker node
+Optional (isolate on node): Switch to this docker node
 ```bash
 eval $(docker-machine env node-registry)
 ```
