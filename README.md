@@ -1,13 +1,13 @@
-# registry
+# Registry
 docker compose for registry server &amp; web frontend, build with help from :
 - https://hub.docker.com/_/registry/
 - https://hub.docker.com/r/hyper/docker-registry-web/
 - https://github.com/pamtrak06/edocker
 
-# documentation
+# Documentation
 See https://docs.docker.com/registry/
 
-# installation
+# Installation
 Optional (isolate on node): create a specific node for the registry
 ```bash
 docker-machine create --driver virtualbox node-registry
@@ -23,7 +23,7 @@ docker-compose build
 docker-compose up
 ```
 
-# use
+# Use
 See results in a browser with address: [$(docker-machine ip node-registry)]:8080.
 
 Run this script to push first image in registry
