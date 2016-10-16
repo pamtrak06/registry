@@ -1,5 +1,8 @@
 # registry
-docker compose for registry server &amp; web frontend
+docker compose for registry server &amp; web frontend, build with help from :
+- https://hub.docker.com/_/registry/
+- https://hub.docker.com/r/hyper/docker-registry-web/
+- https://github.com/pamtrak06/edocker
 
 # documentation
 See https://docs.docker.com/registry/
