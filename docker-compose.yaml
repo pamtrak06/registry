@@ -1,21 +1,21 @@
 version: '2'
 services:
-  server:
-    build: ./server/build
+  registry-server:
+    build: ./registry-server/build
     image: pamtrak06/registry-server
     ports:
       - "5000:5000"
 
-  web:
-    build: ./web/build
-    image: pamtrak06/registry-frontend
+  registry-web:
+    build: ./registry-web/build
+    image: pamtrak06/registry-web
     environment:
-      - "REGISTRY_URL=http://registry_1:5000/v2"
+      - "REGISTRY_URL=http://registry-server_1:5000/v2"
       - "REGISTRY_NAME=localhost:5000"
     ports:
-      - "8082:8080"
+      - "808O:8080"
     volumes:
-      - $PWD/web/volumes/config.yml:/conf/config.yml:ro
+      - $PWD/registry-web/volumes/config.yml:/conf/config.yml:ro
     links:
-      - registry_1
+      - registry-server
 
